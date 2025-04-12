@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h2>BMW!!!!!!!</h>
+
+<p id="details"></p>
+
+<script>
+
+class Car {
+
+constructor(brand) {
+
+this.carname = brand;
+
+}
+
+present() {
+
+return 'I am buying a ' + this.carname;
+
+}
+
+}
+
+class Model extends Car {
+
+constructor(brand, mod) {
+
+super(brand);
+
+this.model = mod;
+
+}
+
+show() {
+
+return this.present() + ', its  a ' + this.model;}
+}
+
+let myCar = new Model("BMW", "X7");
+
+document.getElementById("details").innerHTML = myCar.show();
+
+</script>
+
+</body>
+
+</html>
+
+</html>
